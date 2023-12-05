@@ -47,12 +47,49 @@
             max-width: 100%;
             height: auto;
         }
+
+        .btn_accueil {
+        text-decoration: none;
+        display: inline-block;
+        background-color: #bffff3; 
+        border-radius: 100px; 
+        border: 2px solid #004e40; 
+        color: #000000;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px 9px; 
+        margin: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        width: 150px;
+        }
+
+        .btn_accueil.actif {
+        display: inline-block;
+        background-color: #006351; 
+        border-radius: 100px; 
+        border: 2px solid #004e40; 
+        color: #ffffff;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px 9px; 
+        margin: 5px;
+        cursor: pointer;
+        transition:background-color 0.3s, color 0.3s;
+        }
+
+        .btn_accueil:hover{
+        background-color:#006351;
+        color:#ffffff;
+        border: 2px solid #004e40;
+        }
     </style>
 </head>
 <body x-data="{
     imageaffichee:null,    
 }">
-    <h1>Galerie</h1>
+    <a href="index.html" class="btn_accueil">Revenir vers l'accueil</a>
+    <h1>Galerie</h1
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eaque dicta ullam eligendi totam atque fuga laudantium deleniti necessitatibus ipsum vitae veniam quam quis quae debitis ea, aperiam harum accusantium!</p>
     <div class="overlay" x-show="imageaffichee" @click="imageaffichee = null" @keyup.escape.window="imageaffichee = null">
         <figure><img :src="imageaffichee" alt="image 237... un chiot"></figure>

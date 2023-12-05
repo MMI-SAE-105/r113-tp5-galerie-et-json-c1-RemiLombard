@@ -5,8 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>02 - JSON</title>
     <script src="//unpkg.com/alpinejs" defer></script>
+    <style>
+        .btn_accueil {
+        text-decoration: none;
+        display: inline-block;
+        background-color: #bffff3; 
+        border-radius: 100px; 
+        border: 2px solid #004e40; 
+        color: #000000;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px 9px; 
+        margin: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        width: 150px;
+        }
+
+        .btn_accueil.actif {
+        display: inline-block;
+        background-color: #006351; 
+        border-radius: 100px; 
+        border: 2px solid #004e40; 
+        color: #ffffff;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px 9px; 
+        margin: 5px;
+        cursor: pointer;
+        transition:background-color 0.3s, color 0.3s;
+        }
+
+        .btn_accueil:hover{
+        background-color:#006351;
+        color:#ffffff;
+        border: 2px solid #004e40;
+        }
+    </style>
 </head>
 <body>
+    <a href="index.html" class="btn_accueil">Revenir vers l'accueil</a>
     <h1>JSON</h1>
     <ul x-data="{
         async donnees() {
