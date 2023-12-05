@@ -9,8 +9,8 @@
 <body>
     <h1>JSON</h1>
     <ul x-data="{
-        async données() {
-            const resp=await fetch('donnees.json');
+        async donnees() {
+            const resp=await fetch('donnee.json');
             return await resp.json();
         },
     }">
