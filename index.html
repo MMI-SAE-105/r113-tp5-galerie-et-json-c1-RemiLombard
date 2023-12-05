@@ -5,14 +5,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TP Galerie ET chargement JSON</title>
+  <style>
+    .btn {
+        text-decoration: none;
+        display: inline-block;
+        background-color: #bffff3; 
+        border-radius: 100px; 
+        border: 2px solid #004e40; 
+        color: #000000;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px 9px; 
+        margin: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        width: 150px;
+        }
+
+        .btn.actif {
+        display: inline-block;
+        background-color: #006351; 
+        border-radius: 100px; 
+        border: 2px solid #004e40; 
+        color: #ffffff;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px 9px; 
+        margin: 5px;
+        cursor: pointer;
+        transition:background-color 0.3s, color 0.3s;
+        }
+
+        .btn:hover{
+        background-color:#006351;
+        color:#ffffff;
+        border: 2px solid #004e40;
+        }
+  </style>
 </head>
 <body>
   <h1>TP Galerie ET chargement JSON</h1>
   <nav>
-    <ul>
-      <li><a href="./01-galerie.html">Galerie</a></li>
-      <li><a href="./02-json.html">Chargment JSON</a></li>
-    </ul>
+    <a href="./01-galerie.html" class="btn">Galerie</a>
+    <a href="./02-json.html" class="btn">Chargement JSON</a>
   </nav>
 </body>
 </html>
