@@ -50,13 +50,16 @@
     </style>
 </head>
 <body x-data="{
-    imageaffichee: 'https://picsum.photos/id/237/200/300',
-    overlayVisible: true,
+    imageaffichee: 'https://picsum.photos/id/237/200/300',    
 }">
     <h1>Galerie</h1>
     <p>lorem⇥</p>
-    <div class="overlay" x-show="overlayVisible" @click="overlayVisible = null" @keyup.escape.window="overlayVisible = null">
+    <div class="overlay" x-show="imageaffichee" @click="imageaffichee = null" @keyup.escape.window="imageaffichee = null">
         <figure><img :src="imageaffichee" alt="image 237... un chiot"></figure>
     </div>
+    <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot"
+        @click="imageaffichee='https://picsum.photos/id/236/200/300'">
+    <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot"
+        @click="imageaffichee='https://picsum…photos/id/237/200/300'">
 </body>
 </html>
