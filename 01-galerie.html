@@ -51,10 +51,11 @@
 </head>
 <body x-data="{
     imageaffichee: 'https://picsum.photos/id/237/200/300',
+    overlayVisible: true,
 }">
     <h1>Galerie</h1>
     <p>lorem⇥</p>
-    <div class="overlay">
+    <div class="overlay" x-show="overlayVisible">
         <figure><img :src="imageaffichee" alt="image 237... un chiot"></figure>
     </div>
 </body>
